@@ -1,4 +1,4 @@
-# Urban Routes Automation Project
+# Qa project 07 
 
 Este proyecto de automatización utiliza Selenium WebDriver para interactuar con la página web de Urban Routes y realizar diversas acciones, como establecer rutas, ingresar información de pago, y verificar la funcionalidad de la interfaz.
 
