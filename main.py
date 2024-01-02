@@ -18,7 +18,7 @@ class UrbanRoutesPage:
     phone_input_field = (By.XPATH, "//input[@id='phone']")
     next_phone_number_button = (By.XPATH, "//button[@type='submit' and contains(@class, 'button full')]")
     phone_verification_code = (By.XPATH, "//input[@id='code']")
-    submit_phone_code = (By.XPATH, "/html/body/div/div/div[1]/div[2]/div[2]/form/div[2]/button[1]")
+    submit_phone_code = (By.XPATH, '//button[@type="submit" and @class="button full" and text()="Confirmar"]')
     phone_number_is_filled = (By.XPATH, "//div[@class='np-button filled']/div[@class='np-text'][text()='{{phone_number}}']")
     payment_method_open = (By.XPATH, "//div[@class='pp-button filled']//div[@class='pp-text' and text()='Forma de pago']")
     payment_input_section = (By.XPATH, "//div[@class='modal']//div[@class='section active']//button[text()='Cancelar']")
@@ -30,9 +30,9 @@ class UrbanRoutesPage:
     payment_method_close = (By.XPATH, "/html/body/div/div/div[2]/div[2]/div[1]/button")
     message_for_driver_field = (By.XPATH, "//input[@id='comment']")
     blanket_and_tissues = (By.XPATH, "//div[@class='r-sw-container']//input[@type='checkbox' and @class='switch-input']")
-    ice_cream_counter = (By.XPATH, '/html/body/div/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div')
-    ice_cream_plus_button = (By.XPATH, '/html/body/div/div/div[3]/div[3]/div[2]/div[2]/div[4]/div[2]/div[3]/div/div[2]/div[1]/div/div[2]/div/div[3]')
-    get_a_taxi = (By.XPATH, '/html/body/div/div/div[3]/div[4]/button/span[1]')
+    ice_cream_counter = (By.XPATH, '//div[@class="r-counter-label" and text()="Helado"]')
+    ice_cream_plus_button = (By.XPATH, '//div[@class="r-counter-label" and text()="Helado"]/following-sibling::div[@class="counter-plus"]')
+    get_a_taxi = (By.XPATH, '//button[@type="button" and @class="smart-button"]/span[@class="smart-button-main"][text()="Pedir un taxi"]')
     taxi_modal = (By.XPATH, '/html/body/div/div/div[5]/div[2]')
 
     def __init__(self, driver):
