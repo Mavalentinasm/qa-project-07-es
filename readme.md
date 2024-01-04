@@ -29,13 +29,20 @@ El código está estructurado de la siguiente manera:
 Este código requiere la instalación de Python y la biblioteca Selenium. Se utilizó el navegador Chrome con el controlador Chrome WebDriver.
 Antes de empezar las pruebas se instalaron los paquetes: pip, pytest y se exportaron los siguientes datos:
 
-import data
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import ElementNotInteractableException
+-import data
+
+-from selenium import webdriver
+
+-from selenium.webdriver.common.by import By
+
+-from selenium.webdriver.support.ui import WebDriverWait
+
+-from selenium.common.exceptions import NoSuchElementException
+
+-from selenium.webdriver.support import expected_conditions as EC
+
+-from selenium.common.exceptions import ElementNotInteractableException
+
 
 La configuración fijada en "current file" corre ocho pruebas que fueron aprobadas.
 
